@@ -34,7 +34,7 @@ def main():
             obj.draw(screen)
         pygame.display.flip()
 
-        dt = clock.tick(60) # Sleeps for 1/60 seconds so it only runs 60 times in a sec.
+        dt = clock.tick(60) / 1000 # Sleeps for 1/60 seconds so it only runs 60 times in a sec.
 
 if __name__ == "__main__":
     main()
